@@ -16,7 +16,7 @@ export const getOpenAICompletion = async (input: string): Promise<string> => {
         return completion.choices[0].message?.content as string
     } catch (error) {
         console.log(`Error completing input: ${error}`)
-        return ''
+        return 'Não está retornando ;('
     }
 }
 
